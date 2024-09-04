@@ -47,7 +47,7 @@ height1 = 40
 enemy_size = 50
 
 # defining a font
-smallfont = pygame.font.SysFont('Verdana', 25)
+smallfont = pygame.font.SysFont('Monospace', 25)
 
 # texts to be rendered on screen
 text = smallfont.render('INICIO', True, white)
@@ -92,8 +92,8 @@ def game_over():
 
         # fills the screen with specified colour
         screen.fill((65, 25, 64))
-        smallfont = pygame.font.SysFont('Corbel', 60)
-        smallfont1 = pygame.font.SysFont('Corbel', 25)
+        smallfont = pygame.font.SysFont('Monospace', 60)
+        smallfont1 = pygame.font.SysFont('Monospace', 25)
         game_over_text = smallfont.render('GAME OVER', True, white)
         game_exit = smallfont1.render('SALIR', True, white)
         restart = smallfont1.render('EMPEZAR DE NUEVO', True, white)
@@ -144,7 +144,7 @@ def game(lead_y, lead_x, speed, count):
         pygame.draw.rect(screen, (c1, c2, c3), [0, 0, width, 40])
         pygame.draw.rect(screen, (c3, c2, c1), [0, 680, width, 40])
         pygame.draw.rect(screen, startd, [width - 100, 0, 100, 40])
-        smallfont = pygame.font.SysFont('Corbel', 35)
+        smallfont = pygame.font.SysFont('Monospace', 35)
         exit2 = smallfont.render('Exit', True, white)
 
         # exit
